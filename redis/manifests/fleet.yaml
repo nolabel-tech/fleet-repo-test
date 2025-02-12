@@ -1,11 +1,4 @@
-apiVersion: fleet.cattle.io/v1alpha1
-kind: Bundle
+apiVersion: v1
+kind: Namespace
 metadata:
-  name: redis-manifests
-spec:
-  targets:
-    - clusterSelector:
-        matchLabels:
-          environment: dev
-  resources:
-    - path: .
+  name: redis
